@@ -18,3 +18,5 @@ while file != "exit()":
     fichero.close()
 
     file=input("Dime un fichero(o exit() para salir): ")
+
+print("Adiós!!")
