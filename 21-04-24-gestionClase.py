@@ -47,9 +47,6 @@ while (respuesta != "salir"):
                 print("No tengo esos datos.")
         else:
             print("No conozco a ese alumno")
-    elif respuesta == "salir":
-        print("Adiós!!")
-        exit()
     else:
         print("Comando no reconocido")
 
