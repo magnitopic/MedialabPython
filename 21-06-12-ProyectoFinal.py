@@ -15,16 +15,14 @@ datos = contenido["data"]
 # recorremos todos los elementos de datos y calculamos la distancia de cada desfibrilador a nosotros
 result = []
 for i in range(len(datos)):
-    x = (Ux-float(datos[i]["direccion_coordenada_x"]))
-    y = (Uy-float(datos[i]["direccion_coordenada_y"]))
+    x = ((Ux-float(datos[i]["direccion_coordenada_x"])**.5))
+    y = ((Uy-float(datos[i]["direccion_coordenada_y"])**.5))
     result.append((x+y)/2)
-print(result)
 
 # Recogemos la posición del punto más cercano
 for j in range(len(result)):
     if (result[j] == min(result, key=abs)):
         posicion = j
-print(posicion)
 
 # Se imprime el resultado
 print("\nEl desfibrilador más cercano a tí se encuentra en",
